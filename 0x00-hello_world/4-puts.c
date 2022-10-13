@@ -2,7 +2,7 @@
 /**
  * main-Serves as the entry point for the program
  *
- * return:By defualt returns zero if no erros otherwise returns non-zero value.
+ * Return: By defualt returns zero(0) if no erros otherwise returns non-zero value.
  */
 int main(void)
 {
