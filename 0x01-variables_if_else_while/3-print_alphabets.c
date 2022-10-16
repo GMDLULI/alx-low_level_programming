@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	int i;
-	int j;
+	char i;
+	char j;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
