@@ -1,19 +1,22 @@
 #include <stdio.h>
 /**
- * main- program entry point
- *
- * return:0 if no errors, return non-zero if errors
+ * main - prints the numbers in base 16
+ * Return: Always 0
  */
 
 int main(void)
 {
 	int i;
-	char hexavalues[] = "123456789abcdef";
-	for(i = 0; i < 16; i++);
+	int j;
+
+	for (i = 0; i <= 10; i++)
 	{
-	putchar(hexavalues[i]);
+		putchar ((i % 10) + '0');
+	for (j = 'a'; j <= 'f'; j++)
+		putchar(j);
+
 	putchar('\n');
 	}
-	return(0);
+	return (0);
 }
 
