@@ -2,13 +2,13 @@
 /**
  * main- program entry point
  *
- * Return:(0) if no errors, return non-zero if errors
+ * Return:0 if no errors, return non-zero if errors
  */
 
 int main(void)
 {
-	char i;
-	char j;
+	int i;
+	int j;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
