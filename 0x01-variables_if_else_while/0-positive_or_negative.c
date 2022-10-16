@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** 
+/**
  * main- entry point of program
  *
  * Return: return zero if no errors, otherwise return non-zero
