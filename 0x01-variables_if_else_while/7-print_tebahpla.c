@@ -1,8 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main-program entry point
- *
- * return:0 if no errors, non-zero if errors
+ * main - print the alphabets in reverse
+ * Return: Always 0
  */
 
 int main(void)
