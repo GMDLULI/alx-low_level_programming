@@ -2,7 +2,7 @@
 /**
  * main-entry point of program
  *
- * return:return (0) if no errors return non-zero if errors
+ * return:0 if no errors,  non-zero if errors
  */
 
 int main(void)
