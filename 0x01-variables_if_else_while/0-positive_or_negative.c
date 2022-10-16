@@ -1,4 +1,4 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /** 
@@ -20,7 +20,7 @@ int main(void)
 		printf("%d is zero\n" ,n);
 	}else 
 	{
-		print("%d is positive\n" ,n);
+		printf("%d is positive\n" ,n);
 	}
 	return (0);
 }
