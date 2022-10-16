@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main-entry point of program
@@ -8,8 +8,10 @@
 
 int main(void)
 {
-	char i;
-	for (i = 'a'; i < 'z'; i++);
+	int i;
+
+	for (i = 'a'; i < 'z'; i++)
+
 	{
 	putchar(i);
 	}
