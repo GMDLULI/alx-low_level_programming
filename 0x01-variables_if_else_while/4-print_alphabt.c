@@ -1,9 +1,9 @@
 #include<stdio.h>
 
 /**
- * main-entry point of program
- *
- * return:return (0) if no errors, return non-zero if errors
+ * main - print the alphabet in lowercase
+ * followed by a new line, except q and e
+ * Return: Always 0
  */
 
 int main(void);
@@ -13,9 +13,9 @@ int main(void);
 	for (i = 'a'; i < 'z'; i++)
 	{
 	if (i == 'e' || i == 'q')
-	continue;
 	putchar(i);
 	}
 	putchar('\n');
+
 	return (0);
 }
