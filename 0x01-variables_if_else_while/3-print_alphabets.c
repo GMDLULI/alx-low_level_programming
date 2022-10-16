@@ -9,15 +9,17 @@ int main(void)
 {
 	char i;
 	char b;
-	for( i= 'a'; i < 'z'; i++);
+
+	for (i = 'a'; i < 'z'; i++);
 	{
 	putchar(i);
 	}
-	for(b = 'A'; b < 'Z'; b++);
+
+	for (b = 'A'; b < 'Z'; b++);
 	{
 	putchar(i);
 	}
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
