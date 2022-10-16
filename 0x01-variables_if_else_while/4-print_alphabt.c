@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
  * main- program entry point
  *
@@ -11,9 +12,7 @@ int main(void);
 	for (i = 'a'; i < 'z'; i++);
 	{
 	if (i == 'e' || i == 'q');
-	{
-		continue;
-	}
+	continue;
 	putchar(i);
 	}
 	putchar('\n');
