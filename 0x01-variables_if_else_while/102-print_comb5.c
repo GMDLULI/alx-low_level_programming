@@ -21,7 +21,7 @@ int main(void)
 			putchar(' ');
 
 			putchar('0' + b / 10);
-			putchar('0' + b % 10);;
+			putchar('0' + b % 10);
 		}
 		if (a == 98 && b == 99)
 		{
@@ -29,7 +29,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		
+
 	}
 	putchar('\n');
 	return (0);
