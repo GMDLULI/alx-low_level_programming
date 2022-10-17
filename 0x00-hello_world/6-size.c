@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main-entry point of program
+ * main - Entry point of program
  *
- * Description: prints the size of various types on the computer it is compiled and run on
+ * Description: prints the size of various bata types on the computer
  *
- * return:return zero(0) if no erros and non-zero otherwise
+ * Return: Always 0
  */
 int main(void)
 {
@@ -14,11 +14,11 @@ int main(void)
 	char  d;
 	float f;
 
-	printf("Size of int is %lu byte(s)\n", (unsigned int)sizeof('a'));
-	printf("Size of long int is %lu byte(s)\n", (unsigned long)sizeof('b'));
-	printf("Size of long long int is %lu byte(s)\n", (unsigned long)sizeof('c'));
-	printf("Size of char is %lu byte(s)\n", (unsigned long)sizeof('d'));
-	printf("Size of float is %lu byte(s)\n", (unsigned long)sizeof('f'));
+	printf("Size of int is %lu byte(s)\n", sizeof('a'));
+	printf("Size of long int is %lu byte(s)\n", sizeof('b'));
+	printf("Size of long long int is %lu byte(s)\n", sizeof('c'));
+	printf("Size of char is %lu byte(s)\n", sizeof('d'));
+	printf("Size of float is %lu byte(s)\n", sizeof('f'));
 
-	return(0);
+	return (0);
 }
