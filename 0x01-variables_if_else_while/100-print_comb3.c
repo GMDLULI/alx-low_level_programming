@@ -15,10 +15,14 @@ int main(void)
 	{
 		for (b = '0'; b <= '9'; b++)
 		{
-			if (a < b && a != b)
+			if (a != b)
 			{
 				putchar(a);
 				putchar(b);
+			}
+			if (a < b)
+			{
+				continue;
 			}
 			if (a == 8 && b == 9)
 			{
