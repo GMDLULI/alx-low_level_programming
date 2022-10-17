@@ -28,7 +28,10 @@ int main(void)
 		if (a == 98 && b == 99)
 		{
 			break;
+			putchar(',');
+			putchar(' ');
 		}
+		
 	}
 	putchar('\n');
 	return (0);
