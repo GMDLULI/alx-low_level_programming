@@ -20,7 +20,7 @@ int main(void)
 				putchar(a);
 				putchar(b);
 			}
-			if (a < b)
+			if (a == b)
 			{
 				continue;
 			}
