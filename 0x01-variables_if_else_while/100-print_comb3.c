@@ -18,6 +18,7 @@ int main(void)
 			if (a < b && a != b)
 			{
 				putchar(a);
+				putchar(' ');
 				putchar(b);
 			}
 			if (a == 8 && b == 9)
@@ -27,7 +28,6 @@ int main(void)
 			else
 			{
 				putchar(',');
-				putchar(' ');
 			}
 		}
 	}
