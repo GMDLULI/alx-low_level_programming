@@ -4,16 +4,15 @@
  *
  * Description: print function that prints the alphabets in lowercase
  *
- * Return: Always 0
+ * Return: non-value
  */
 void print_alphabet(void)
 {
-	int i;
+	char i;
+
 	for (i = 'a'; i < 'z'; i++)
 	{
-		_putchar('i');
+	_putchar('i');
 	}
-		_putchar("\n");
-		return (0);
+	_putchar('\n');
 }
-
