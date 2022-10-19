@@ -2,7 +2,7 @@
 /**
  * _abs-prints absolute value of integer
  * @n:integer to compute its absolute value
- * return:return 0-if succesfull
+ * Return:return the absvalue
  */
 int _abs(int n)
 {
