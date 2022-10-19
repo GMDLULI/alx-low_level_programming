@@ -2,10 +2,9 @@
 /**
  * _abs-prints absolute value of integer
  * @r:integer to compute its absolute value
- * int:integer
  * return:return the absvalue
  */
-int _abs(int)
+int _abs(int n)
 {
 	int r;
 	int absvalue;
