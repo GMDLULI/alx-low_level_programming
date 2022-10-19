@@ -1,13 +1,12 @@
 #include "main.h"
 /**
  * add- print sum of integers
- * @int: integers added.
+ * @a: number one
+ * @b: number two
  * Return: Alwyas 0
  */
-int add(int, int)
+int add(int a, int b )
 {
-	int a;
-	int b;
 	int sum = (a +  b);
 
 	_putchar(sum);
