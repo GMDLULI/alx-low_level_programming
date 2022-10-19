@@ -1,20 +1,19 @@
 #include "main.h"
 /**
  * _abs-prints absolute value of integer
- * @a:integer to compute its absolute value
- * return:return the absolute values
+ * @r:integer to compute its absolute value
+ * int:integer
+ * return:return the absvalue
  */
 int _abs(int)
 {
 	int r;
-	int absolute value = k
+	int absvalue;
 
-		if (r < 0)
-		{
-			_putchar(k* ,'-1');
-		}
-		else
-		{
-			return (k);
-		}
+	if (r < 0)
+	{
+	r = r * (-1);
+	}
+	absvalue = r;
+	return (absvalue);
 }
