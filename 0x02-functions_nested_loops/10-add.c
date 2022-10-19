@@ -3,13 +3,12 @@
  * add- print sum of integers
  * @a: number one
  * @b: number two
- * Return: Alwyas 0
+ * Return: return sum
  */
-int add(int a, int b )
+int add(int a, int b)
 {
-	int sum = (a +  b);
+	int sum = (a + b);
 
-	_putchar(sum);
-	return (0);
+	return (sum);
 }
 
