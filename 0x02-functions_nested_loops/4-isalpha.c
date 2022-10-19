@@ -2,7 +2,7 @@
 /**
  * _isalpha-checks for alphabet charecter
  * @c:character to check lowercase or uppercase
- * return:return 1-if character is lowercase or uppercase, 0-if otherwise
+ * Return:1-if character is lowercase or uppercase, 0-if not
  */
 int _isalpha(int c)
 {
