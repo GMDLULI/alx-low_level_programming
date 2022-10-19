@@ -5,12 +5,3 @@
  */
 void times_table(void)
 {
-	int n;
-
-	int counter;
-
-	for (counter = 1; counter <= 9; counter++)
-	{
-		_putchar(counter * 9 = n);
-	}
-}
