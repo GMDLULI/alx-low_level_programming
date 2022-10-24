@@ -13,8 +13,10 @@ void reset_to_98(int *n)
 	p = 98;
 	n  = &p;
 
-	_putchar(p, &p);
+	_putchar(p);
 	_putchar('\n');
-	_putchar(n, *n);
+	_putchar(&p);
+	_putchar('\n');
+	_putchar(n);
 	_putchar('\n');
 }
