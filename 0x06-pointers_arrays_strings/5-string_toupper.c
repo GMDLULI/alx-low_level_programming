@@ -2,11 +2,11 @@
 
 /**
  * string_toupper - change lowecase char to uppercase
- * @s: string
+ * @s: pointer
  * Return: return s
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i;
 
