@@ -8,7 +8,7 @@
  * Return: dest
  */
 
-char *-memcpy(char *dest, char *src, unsigned int)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int i;
 
@@ -16,12 +16,6 @@ char *-memcpy(char *dest, char *src, unsigned int)
 	{
 		dest[i] = src[i];
 	}
-	if (dest == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		return (dest);
-	}
+	dest[i] != '\0';
+	return (dest);
 }
