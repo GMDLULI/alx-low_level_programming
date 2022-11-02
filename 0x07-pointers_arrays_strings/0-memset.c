@@ -3,28 +3,16 @@
 /**
  * _memset- function that fills memory with a constant byte
  * @n: number of bytes
- * @s:pointer
- * @b: constant
- * Return: 0
+ * @s: memory area
+ * @b: bytes
+ * Return: pointer to s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	char *ptr = s;
 
-	char buffer[n];
-	char *ptr = &buffer[n];
-
-	for (int i = 0; i < n; i++)
-	{
-		buffer[i] = b;
-	}
-
-	for (int i = 0; i < n; i++)
-	{
-		return (ptr);
-
-	}
-
-	return (0);
+	while (n-- > 0)
+	*ptr++ = b;
+	return (s);
 }
