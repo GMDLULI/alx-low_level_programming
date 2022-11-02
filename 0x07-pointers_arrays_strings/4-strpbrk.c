@@ -4,26 +4,23 @@
  * _strpbrk- function that searches for any set of bytes
  * @s: string to locate the char to
  * @accept: second string to locate the char from
- * Return: s
+ * Return: pointer to the byte or NULL
  */
 
 char *_strpbrk(char *s, char *accept)
 {
 
-	int i, j;
+	int i, *p;
 
-	for (i = 0; i < s[i] != '\0'; i++)
+	for (i = *s; i != 0; s++, i = *s)
 	{
-		for (j = 0; j < accept[j] != '\0'; j++)
+		for (p = accept; *p != 0; p++)
 		{
-			s[i] = accept[j];
-		
-		}
-		if (s[i] != accept[j])
-		{
-			return (s[i]);
+			if (i == *p)
+			{
+				return (s);
+			}
 		}
 	}
-
-	return (s);
+	return (0);
 }
