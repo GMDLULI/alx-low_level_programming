@@ -11,20 +11,10 @@ void print_chessbroard(char (*a)[8])
 
 	for (i = 0; i < 8; i++)
 	{
-		for (j = 1; j < 8; j++)
+		for (j = 0; j < 8; j++)
 		{
-			if (i = 0 && i = 7)
-			{
-				printf("r, k, b, q, k, b, k, r");
-			}
-			if (i = 1; && i = 6)
-			{
-				printf("p");
-			}
-			else
-			{
-				printf(' ');
-			}
+			putchar(a[x][y]);
 		}
+		_putchar('\n');
 	}
 }
