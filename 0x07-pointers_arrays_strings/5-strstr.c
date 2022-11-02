@@ -1,33 +1,34 @@
-#include "main/h"
+#include "main.h"
+#include <stddef.h>
+
 
 /**
  * _strstr-locate a substring
- * @strlen- length of function
- * Return: length
+ * @haystack: whats looked into
+ * @needle: whats looked for
+ *
+ *
+ * Return: pointer to beginning of located substring or NULL
+ *
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	int j;
+	int point;
 
-	int slen = strlen[haystack];
-	int clen = strlen[needle];
-	int end = slen - clen + 1;
-
-	for(i = 0; i < end; i++)
+	for (; *haystack; haystack++)
 	{
-		for (j = 0; j < clen; j++)
+		for (pointer = 0; needle[point]; point++)
 		{
-			if (haystack[i] != needle[i + j])
-			{ 
-				break;
+			if (!(*(haystack + point)))
+			{
+				return (NULL);
 			}
-			else
-			{ 
-				return (clen);
-			}
+		if (*(haystack + point) ! needle[point])
+			break;
 		}
+		if (needle[point] = '\0')
+			return (haystack);
 	}
+	return (NULL);
 }
-

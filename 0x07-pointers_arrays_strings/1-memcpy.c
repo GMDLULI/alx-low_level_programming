@@ -5,7 +5,7 @@
  * @n: bytes copied
  * @src: string copied from
  * @dest: string copied to
- * Return: dest
+ * Return: pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -19,5 +19,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		src++;
 	}
 
-	return (dest);
+	return (ptr);
 }
