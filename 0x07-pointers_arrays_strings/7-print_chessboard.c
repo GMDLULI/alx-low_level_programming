@@ -4,8 +4,7 @@
  * _chessboard- print the pieces of a chessboard
  * Return: return 0
  */
-
-void print_chessbroard(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int i, j;
 

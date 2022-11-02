@@ -6,7 +6,6 @@
  * @accept: second string
  * Return: length
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;

@@ -7,7 +7,6 @@
  * @c: charecter located
  * Return: pointer to the char or NULL
  */
-
 char *_strchr(char *s, char c)
 {
 	int i;

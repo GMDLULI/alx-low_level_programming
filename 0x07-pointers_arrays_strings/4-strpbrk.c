@@ -6,7 +6,6 @@
  * @accept: second string to locate the char from
  * Return: pointer to the byte or NULL
  */
-
 char *_strpbrk(char *s, char *accept)
 {
 

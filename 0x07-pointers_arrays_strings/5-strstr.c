@@ -11,7 +11,6 @@
  * Return: pointer to beginning of located substring or NULL
  *
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	int point;
