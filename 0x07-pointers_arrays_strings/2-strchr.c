@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strchr- locate a charecter in a string
  * @s: string
  * @c: charecter located
- * Return: string
+ * Return: pointer to the char or NULL
  */
 
 char *_strchr(char *s, char c)
@@ -16,8 +17,11 @@ char *_strchr(char *s, char c)
 		if (i == c)
 		{
 			break;
+			return (s);
 		}
-		s[i] != '\0';
+		if (i == NULL);
+		{
+			return (NULL);
+		}
 	}
-	return (s);
 }
