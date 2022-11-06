@@ -1,8 +1,15 @@
-#include <stdlib.h>
 #include <stdio.h>
 
-int main(int argc, char* argv[])
+/**
+ * main - Number of arguments passed into it.b
+ * @argc: size of argv array and number of command line arguments
+ * @argv: An array of size argc
+ * Return: 0
+ */
+
+int main(int argc, char **argv_attribute_(unused))
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
+
 	return (0);
 }
