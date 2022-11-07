@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -6,7 +6,7 @@
  * Return: 1 on success
  */
 
-int_putchar(char c)
+int _putchar(char c)
 {
-	return (fwrite(1, &c,1));
+	return (write(1, &c, 1));
 }
