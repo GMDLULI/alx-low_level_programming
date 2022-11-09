@@ -2,56 +2,42 @@
 #include <stdlib.h>
 
 /**
- * _strlen - calculates the length of a string
- * @s- string
- *
- * Return: length
- */
-
-int _strlen(char *s)
-{
-	int len, i;
-
-	len = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-		len++;
-	return (len);
-}
-
-
-/**
  * _strdup- returns a pointer to a newly allocated spave in memory
- * @str: string
- * @ptr: pointer
- * @dup: pointer
- * Return: a pointer
+ * @str: string to copy
+ * Return: a pointer to duplicated string or NULL if error
  */
 
 char *_strdup(char *str)
 {
-	char *dup;
-	int i, 
-	   
-	 *ptr;
-      	ptr = malloc(sizeof(char) * _strlen(str) + 1);
-
-	if (dup != ptr)
-	{
-	i	return (NULL);
-	}
+	char *new_str, *start;
+	int i = 0, len = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	i = 0;
+	start = str;
+
 	while (*str)
 	{
-		dup[i++] = *str++;
-	
+		len++;
+		str++;
 	}
-	dup[i] = '\0';
-	return (dup);
+
+	str = start;
+
+	new_str = malloc(sizeof(char) * (len + 1));
+
+	start = new_str;
+	if (new_str != NULL)
+	{
+		for (; i < len; i++)
+		{
+			new_str[i] = *str;
+			str++;
+		}
+		new_str[i] = '\0';
+		return (start);
+	}
+	else
+		return (NULL);
 }
