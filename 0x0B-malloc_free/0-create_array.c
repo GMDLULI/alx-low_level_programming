@@ -9,19 +9,19 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *p = (char*) malloc (sizeof (char));
+	char *p = malloc (sizeof(char) * size);
 
-	for (c = 0; c < size; c++)
+	int i;
+
+	for (i = 0; i < size; i++)
 	{
-		if (a == 0)
-		{
-			return (NULL);
-		}
-		else
-		{
-			printf("%d", *p)
-		}
+		p[i] = c;
 	}
+	if (i == 0)
+	{
+		return (NULL);
+	}
+	else
 	return (0);
 }
 

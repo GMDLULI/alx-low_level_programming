@@ -2,7 +2,8 @@
 
 /**
  * _concate- concatenate two strings
- *
+ * @s1: first string
+ * @s2: second string
  * Return: a pointer
  */
 
@@ -24,8 +25,8 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	s1[i] = '\0';
+	return(s1);
 	
-	printf("%s", *s1);
 }
 
 
