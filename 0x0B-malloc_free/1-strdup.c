@@ -31,7 +31,7 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	char *dup;
-	int i; 
+	int i, 
 	
 
 	char *ptr =  malloc(sizeof(char) * _strlen(str) + 1);
@@ -47,10 +47,10 @@ char *_strdup(char *str)
 	}
 
 	i = 0;
-	for (i = 0; *str; i++)
+	while ( *str)
 	{
-		dup[i] = *str;
-		str++;
+		dup[i++] = *str++;
+	
 	}
 	dup[i] = '\0';
 	return (dup);
