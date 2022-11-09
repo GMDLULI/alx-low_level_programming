@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _strlen- calculates the length of string
  * @s: string
@@ -53,15 +53,3 @@ char *str_concat(char *s1, char *s2)
 		concate[_strlen(s1) + i] = s2[i];
 	return (concate);
 }
-
-
-
-
-
-
-
-}
-
-
-
-
