@@ -5,12 +5,12 @@
  * create_array- create an array of chars and initialize it with specific char
  * @size: thie size of array.
  * @c: charecter to initialize the array
- * Return : a pointer if success, NULL if failure
+ * Return: a pointer if success, NULL if failure
  */
 
 char *create_array(unsigned int size, char c)
 {
-	char *p = malloc (sizeof(char) * size);
+	char *p = (char *)malloc(sizeof(char) * size);
 
 	unsigned int i;
 
