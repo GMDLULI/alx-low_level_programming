@@ -4,7 +4,8 @@
 /**
  * array_range- create an array of integers
  * @min: first array
- * @max: second array
+ * @max: second arrayi
+ *
  * Return: pointer to newly created array
  */
 
@@ -22,7 +23,7 @@ int *array_range(int min, int max)
 	if (a == NULL)
 		return (NULL);
 
-	for (i = 0; i < j; j++, min++)
+	for (i = 0; i < j; i++, min++)
 	{
 		a[i] = min;
 	}
