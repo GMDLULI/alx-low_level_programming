@@ -3,5 +3,8 @@
 
 int main()
 {
-	return (SIZE);
+	int s = SIZE; 
+	printf("%d\n", s);
+
+	return (0);
 }
