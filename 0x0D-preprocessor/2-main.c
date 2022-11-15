@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-int main ()
+/**
+* main - prints the file name of the program
+* Return: 0
+*/
+
+int main(void)
 {
-	printf("file : %s\n"__FILE__);
+	printf(" %s\n", __FILE__);
+	return (0);
 }
