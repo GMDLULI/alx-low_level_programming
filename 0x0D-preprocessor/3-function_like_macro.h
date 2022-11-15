@@ -1,11 +1,6 @@
-#include <stdio.h>
-#define ABS(x) x
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-int main ()
-{
-#if ABS(X) < 0
-	printf("%d\n", x);
-#else
-	printf("%d\n", x);
+#define ABS(x) ((x) < 0 ? (-x) : (x))
+
 #endif
-}
