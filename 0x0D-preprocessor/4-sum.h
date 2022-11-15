@@ -1,8 +1,6 @@
-#include <stdio.h> 
-#define sum (x,y) ((x) + (y))
+#ifndef SUM_H
+#define SUM_H
 
-int main ()
-{
-	int n = sum (x,y);
-	printf("%d\n", n);
-}
+#define sum(x,y) ((x) + (y))
+
+#endif
