@@ -11,10 +11,10 @@
  * Return: the elements of the struct, which
  * indicate the information about a dog.
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 #endif
