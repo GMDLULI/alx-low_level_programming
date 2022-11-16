@@ -1,23 +1,41 @@
-#ifndef PRINT_DOG 
-#define PRINT_DOG
-
 #include <stdio.h>
-#include "main.h"
+#include "dog.h"
 #include <stdlib.h>
+
+/**
+ *print_dog- prints struct dog
+ *@d: the pointer to struct dog
+ */
 
 void print_dog(struct dog *d)
 {
-	d = malloc(sizeof(struct dog));
-
-	d -> name = name;
-	d -> age = age;
-	d -> owner = owner;
 
 	if (d == NULL)
 	{
-		printf("nil");
-		return (0);
+		return;
+	}
+	if (d->name == NULL)
+	{
+		printf("Name:(nil)\n");
+	}
+	else
+	{
+		printf("Name:%s\n", d->name);
+	}
+	if (d->age < 0)
+	{
+		printf("Age:(nil)\n");
+	}
+	else
+	{
+		printf("Age:%f\n", d->age);
+	}
+	if (d->owner == NULL)
+	{
+		printf("Owner:(nil)\n");
+	}
+	else
+	{
+		printf("Owner:%s\n", d->owner);
 	}
 }
-#endif
-
