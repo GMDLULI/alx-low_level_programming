@@ -6,7 +6,8 @@
  * @name: name of dog
  * @age: dogs age
  * @owner: the name of the owner of the dog
- * Return: always 0
+
+ * Return: void
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
