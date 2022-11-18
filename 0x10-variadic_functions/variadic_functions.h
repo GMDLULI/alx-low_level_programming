@@ -1,7 +1,7 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
-typdef struct printer
+typedef struct printer
 {
 	char *symbol;
 	void (*print)(va_list arg);
