@@ -1,54 +1,31 @@
-#include <stdio.h>
 #include "3-calc.h"
 
 /**
-  * op_add - returns the some of twq integers
-  * Return: "c" the sum
+  * get_op_func - function pointer that selects function to perform
+  * @s: the operator asked by the user
+  * Return: pointer to the function that coresponds to the
+  * operator given as parameter
   */
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-	int c;
-	c = a + b;
-	return (c);
-}
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i;
 
-/**
-  * op_mul - returns the difference of two integers
-  * Return: "d" the difference
-  */
-int op_sub(int a, int b)
-{
-	int d;
-	d = a - b;
-	return (d);
-}
-/**
-  * op_mul - returns the product of two integers
-  * Return - "e" the product
-  */
-int op_sub(int a, int b)
-{
-	int e;
-	e = a * b;
-	return (e);
-}
-/**
-  * op_div - returns the result of the divison
-  * Return: "f" the result
-  */
-int op_div(int a, int b)
-{
-	int f;
-	f = a / b;
-	return (f);
-}
-/**
-  * op_mod - returns the remainder of the divison
-  * Return: "g" remainder
-  */
-int op_mod(int a, int b)
-{
-	int g;
-	g = a % b;
-	return (g);
+	i = 0;
+
+	while (ops[i].op)
+	{
+		if (strcmp(ops[i].op, s) == 0)
+			return (ops[i].f);
+		i++;
+	}
+
+	return (NULL);
 }
