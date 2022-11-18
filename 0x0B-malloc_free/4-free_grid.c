@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * free_grid- function that frees 2 dimentional grid
@@ -11,11 +12,10 @@ void free_grid(int **grid, int height)
 	int i;
 	int j;
 
-	char *ptr = malloc(sizeof(int) * i,j);
-	
-	*alloc_grid(ptr);
-	free [i][j];
+	array = (int **)malloc(sizeof(int *) * height);
 
-	return (ptr);
+	free(array;
+
+	return (array);
 }
 
