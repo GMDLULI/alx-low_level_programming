@@ -1,5 +1,5 @@
 #include <stdio..h>
-#include "main.h"
+#include "function_pointers.h"
 
 /**
   * int_index- return the index of the firat element
@@ -10,7 +10,6 @@
   */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	char *ptr = (char*)array;
 	int i;
 	if (array && cmp)
 	{
@@ -25,5 +24,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 			}
 		}
 	}
+
 	return(-1);
 }
