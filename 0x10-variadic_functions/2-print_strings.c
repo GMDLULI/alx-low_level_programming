@@ -7,14 +7,14 @@
  * @separator: The string to be printed
  * @n: the number to strings to be printed
  * @...: A variable number of strings to be printed
- * Return: 0
+ * Return: no return
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strings;
-	char *str;
 
+	char *str;
 	unsigned int i;
 
 	va_start(strings, n);
@@ -23,16 +23,23 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(strings, char*);
 
-		if (str == NULL)
-			printf("(nil)");
-		else
+		if (str)
+		{
 			printf("%s", str);
-
-		if (i != (n - 1) && separator != NULL)
-			printf("%s", separator);
+		}
+		else
+		{
+			printf("(nil)");
+		}
+		if (i < (n - 1))
+		{
+			if (separator)
+			{
+				printf("%s", separator);
+			}
+		}
 	}
 
 	printf("\n");
-
 	va_end(strings);
 }

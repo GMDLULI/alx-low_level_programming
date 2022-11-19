@@ -1,17 +1,11 @@
-/**
- * filee: 0-sum_them_all.c
- * Auth: Gugulethu Mdluli
- */
-
 #include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
  * sum_them_all - sums up all its parameters
  * @n: number of parameters passed as agruments
- * @...: A variable number to calculate thesum of
+ * @...: A variable number to calculate the sum of
  * Return: if n == 0 - 0.
- * otherwise - the sum of all parameters
  */
 
 int sum_them_all(const unsigned int n, ...)
