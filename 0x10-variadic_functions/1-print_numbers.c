@@ -9,17 +9,18 @@
  * @...: variable number to be printed
  * Return: no return
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list nums;
 	unsigned int i;
+	va_list nums;
+	int value;
 
 	va_start(nums, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(nums, int));
+		value = va_arg(nums, int);
+		printf("%d", value);
 
 		if (i != (n - 1) && separator != NULL)
 		{
