@@ -1,4 +1,4 @@
-SECTION .data
+	SECTION .data
 msg:	db "Hello, Holberton", 0
 fmy:	db "%s", 10, 0
 
