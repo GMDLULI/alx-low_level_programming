@@ -23,6 +23,10 @@ int create_file(const char *filename, char *text_content)
 		for (i = 0; text_content[i];)
 			i++;
 	}
+	else
+	{
+		i = 0;
+	}
 
 	fb = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	w = write(fb, text_content, i);
