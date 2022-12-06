@@ -3,8 +3,10 @@
 /**
   * create_file - creates a new file
   * @filename: pointer to the file name
-  * @text_content: pointer to the string
-  * Return: 1 on success otherwise -1
+  * @text_content: pointer to the string to write to he file
+  *
+  * Return: if function fails - -1
+  *	    otherwise - 1.
   */
 
 int create_file(const char *filename, char *text_content)
@@ -12,9 +14,8 @@ int create_file(const char *filename, char *text_content)
 	int fb, w, i;
 
 	if (filename == NULL)
-	{
 		return (-1);
-	}
+
 	if (text_content != NULL)
 	{
 		for (i = 0; text_content[i];)
