@@ -1,12 +1,14 @@
-#include <stdio.h>
 #include "main.h"
 /**
   * create_file - creates a new file
+  * Description
+  * 1. creates a new file
+  * 2. truncates if file exists
+  * 3. if no input is recviced, create an empty file
   * @filename: pointer to the file name
   * @text_content: pointer to the string to write to he file
   *
-  * Return: if function fails - -1
-  *	    otherwise - 1.
+  * Return: 1 on success otherwise -1
   */
 
 int create_file(const char *filename, char *text_content)
